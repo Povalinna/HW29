@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form name="mainForm" action="" id="mainForm">
+        <p><input type="text" name="firstname" placeholder="Input your first name" id="firstname" value="" /></p>
+
+
+
+        <p><input type="text" name="lastname" placeholder="Input your last name" id="lastname" value="" /></p>
+
+        <p><input type="datBirth" name="datBirth" placeholder="Input data of your birth" id="datBirth" value="" /></p>
+        <p><input type="radio" name="gender" id="gender" value="Male" />Male</p>
+        <p><input type="radio" name="gender" id="gender" value="Female" />Female</p>
+
+        <select name="city" id="city">
+            <option value="o"> Select your city</option>
+            <option value="Kharkov">Kharkov</option>
+            <option value="Lviv">Lviv</option>
+            <option value="Poltava">Poltava</option>
+            <option value="Kherson">Kherson</option>
+        </select>
+
+        <p><textarea name="description" placeholder="input your adress" id="adress" value=""></textarea></p>
+
+        <p> What languages ​​do you speak</p>
+        <p><input type="checkbox" class="lang" name="languages" value="English" />Englisn</p>
+        <p><input type="checkbox" class="lang" name="languages" value="German" />German</p>
+        <p><input type="checkbox" class="lang" name="languages" value="Russian" />Russian</p>
+        <p><input type="checkbox" class="lang" name="languages" value="Ukrainian" />Ukrainian</p>
+        <p><input type="checkbox" class="lang" name="languages" value="Spanish" />Spanish</p>
+
+        <p><button type="button" id="button" value="Push me" onclick="fromForm()">save</button>
+            <button type="reset" value="reset" class="but">reset</button>
+        </p>
+    </form>
+
+    <div id="result">
+        <br>
+        <div id="output"> </div>
+        <p> <button type="button" class="but" onclick="goBack()" value="back">back</button></p>
+    </div>
+
+    <script src="hw.js"></script>
+</body>
+
+</html>
